@@ -42,10 +42,12 @@ source ~/.zshrc
     * Run tests using: **IntelliJ IDEA**
 ## Lombok Requires Annotation Processing
 * Do you want to enable annotation processors?: Enable
-# 뷰 리졸버
+
+# 뷰 리졸버 응답 방식
 ## 정적 페이지
-* Welcome page
+* `src/main/resources/static/index.html` 파일 추가: Welcome page
+* `src/main/resources/static/hello-static.html` 파일 추가: 정적 페이지
 
-## 동적 페이지
+## 템플릿 엔진 동적 페이지
 
-## JSON
+## REST API를 위한 JSON
