@@ -27,7 +27,7 @@ source ~/.zshrc
   * Spring Configuration Processor
     * application.yml 또는 application.properties의 값을 읽어와 멤버 변수에 자동 할당해주는 @ConfiguraionProperties 애노테이션 지원
   * Spring Boot DevTools
-    * 애플리케이션 빠른 재시작 및 각종 설정 지원
+    * Thymeleaf 템플릿 수정 시 재기동 없이 반영
 # IntelliJ 설정
 ## 터미널 폰트 색상
 라이트모드 테마 이용 시 터미널에 OMZ 테마 때문에 폰트가 안 보이는 문제
@@ -42,6 +42,11 @@ source ~/.zshrc
     * Run tests using: **IntelliJ IDEA**
 ## Lombok Requires Annotation Processing
 * Do you want to enable annotation processors?: Enable
+## 템플릿 Live Reload
+* Advanced Settings
+  * Compiler: Allow auto-make to start even if developed application is currently running (체크)
+* Build, Execution, Deployment > Compiler
+  * Build project automatically (체크)
 # 뷰 리졸버
 ## 정적 페이지
 * Welcome page
