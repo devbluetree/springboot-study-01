@@ -58,5 +58,17 @@ source ~/.zshrc
 * `src/main/resources/static/hello-static.html` 파일 추가: 정적 페이지
 
 ## 템플릿 엔진 동적 페이지
+* `src/main/resources/templates/hello-template.html` 파일 추가
+* `helloMvc` 메소드 추가
 
 ## REST API를 위한 JSON
+* `helloApi` 메소드 추가
+* 객체를 반환하면 json 형태로 반환
+
+`@ResponseBody` 애노테이션
+* HTTP 프로토콜 응답의 BODY에 문자열 내용을 직접 반환
+* 뷰 리졸버 대신에 HttpMessageConverter가 동작
+  * StringConverter(StringHttpMessageConverter)
+  * JsonConverter(MappingJackson2HttpMessageConverter)
+* byte 처리 등등 기타 여러 HttpMessageConverter가 기본으로 등록되어 있음
+클라이언트의 HTTP Accept 헤더와 서버의 컨트롤러 반환 타입 정보 둘을 조합해서 HttpMessageConverter가 선택된다.
