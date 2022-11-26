@@ -42,11 +42,16 @@ source ~/.zshrc
     * Run tests using: **IntelliJ IDEA**
 ## Lombok Requires Annotation Processing
 * Do you want to enable annotation processors?: Enable
-## 템플릿 Live Reload
+## 템플릿 변경사항 자동 반영
 * Advanced Settings
   * Compiler: Allow auto-make to start even if developed application is currently running (체크)
 * Build, Execution, Deployment > Compiler
   * Build project automatically (체크)
+* `src/main/resources/application.properties` 파일에 아래 내용 추가
+  ```
+  spring.thymeleaf.cache=false
+  spring.thymeleaf.prefix=file:src/main/resources/templates/
+  ```
 # 뷰 리졸버
 ## 정적 페이지
 * Welcome page
