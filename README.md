@@ -52,10 +52,11 @@ source ~/.zshrc
   spring.thymeleaf.cache=false
   spring.thymeleaf.prefix=file:src/main/resources/templates/
   ```
-# 뷰 리졸버
+# 뷰 리졸버 응답 방식
 ## 정적 페이지
-* Welcome page
+* `src/main/resources/static/index.html` 파일 추가: Welcome page
+* `src/main/resources/static/hello-static.html` 파일 추가: 정적 페이지
 
-## 동적 페이지
+## 템플릿 엔진 동적 페이지
 
-## JSON
+## REST API를 위한 JSON
